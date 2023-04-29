@@ -1,0 +1,20 @@
+---
+
+kind: pipeline
+type: docker
+name: default
+
+docker:
+  - name: build
+    image: plugins/docker
+    settings:
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      tags:
+        - latest
+        - ${DRONE_COMMIT_SHA}
+      platform:
+        - linux/amd64
+        - linux/arm64
