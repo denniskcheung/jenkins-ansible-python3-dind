@@ -7,12 +7,12 @@ name: default
 steps:
   - name: build amd64
     image: plugins/docker
-    repo: denniskcheung/jenkins-ansible-python3-dind
     settings:
       username:
         from_secret: docker_username
       password:
         from_secret: docker_password
+      repo: denniskcheung/jenkins-ansible-python3-dind
       tags:
         - latest
       platform:
