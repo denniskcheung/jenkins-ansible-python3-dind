@@ -15,5 +15,6 @@ steps:
       repo: denniskcheung/jenkins-ansible-python3-dind
       tags:
         - latest
+        - lts
       platform:
         - linux/amd64
