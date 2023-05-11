@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.387.2-alpine
+FROM jenkins/jenkins:lts-alpine
 MAINTAINER Dennis Cheung (denniskcheung@gmail.com)
 
 USER root
